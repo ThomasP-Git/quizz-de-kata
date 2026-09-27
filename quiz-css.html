@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz - Bases du CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">Retour à la bibliothèque</a>
+    <h1>Bases du CSS</h1>
+  </header>
+
+  <main>
+    <!-- value="1" = bonne réponse, value="0" = mauvaise réponse -->
+
+    <fieldset>
+      <legend>1. Quel symbole sélectionne une classe ?</legend>
+      <label><input type="radio" name="q1" value="1"> .</label>
+      <label><input type="radio" name="q1" value="0"> #</label>
+      <label><input type="radio" name="q1" value="0"> *</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Quelle propriété change la couleur du texte ?</legend>
+      <label><input type="radio" name="q2" value="0"> background</label>
+      <label><input type="radio" name="q2" value="0"> font-color</label>
+      <label><input type="radio" name="q2" value="1"> color</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Quelle balise relie un fichier CSS à la page ?</legend>
+      <label><input type="radio" name="q3" value="1"> &lt;link&gt;</label>
+      <label><input type="radio" name="q3" value="0"> &lt;style src&gt;</label>
+      <label><input type="radio" name="q3" value="0"> &lt;css&gt;</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Quelle propriété crée un espace à l'intérieur d'un bloc ?</legend>
+      <label><input type="radio" name="q4" value="0"> margin</label>
+      <label><input type="radio" name="q4" value="1"> padding</label>
+      <label><input type="radio" name="q4" value="0"> border</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. Quel symbole sélectionne un id ?</legend>
+      <label><input type="radio" name="q5" value="0"> .</label>
+      <label><input type="radio" name="q5" value="1"> #</label>
+      <label><input type="radio" name="q5" value="0"> @</label>
+    </fieldset>
+
+    <button onclick="afficherScore()">Voir mon score</button>
+    <p id="resultat"></p>
+  </main>
+
+  <script src="score.js"></script>
+</body>
+</html>

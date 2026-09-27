@@ -1,0 +1,85 @@
+/* Couleurs utilisées partout "mode sombre" */
+:root {
+  --texte: #E4EAF1;
+  --bleu: #7FB2E5;
+  --bordure: #3A4A5C;
+  --fond: #121A24;
+  --carte: #1C2733;
+  --vert: #5CC98A;
+  --rouge: #F07A7A;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--bleu);
+}
+
+a {
+  color: var(--bleu);
+  text-decoration: none;
+}
+
+/* Bibliothèque : un bloc cliquable par quiz */
+.quiz {
+  display: block;
+  background: var(--carte);
+  border-left: 6px solid var(--bleu);
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  color: var(--texte);
+}
+
+/* Une question */
+fieldset {
+  background: var(--carte);
+  border: 1px solid var(--bordure);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+button {
+  background: var(--bleu);
+  color: var(--fond);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#resultat {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Correction après le clic sur "Voir mon score" */
+.juste {
+  border: 2px solid var(--vert);
+}
+
+.erreur {
+  border: 2px solid var(--rouge);
+}
+
+/* Dans une question fausse, montre la bonne réponse en vert */
+.erreur label:has(input[value="1"]) {
+  color: var(--vert);
+  font-weight: bold;
+}

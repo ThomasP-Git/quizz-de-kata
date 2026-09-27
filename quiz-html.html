@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz - Structure HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">Retour à la bibliothèque</a>
+    <h1>Structure HTML</h1>
+  </header>
+
+  <main>
+    <!-- value="1" = bonne réponse, value="0" = mauvaise réponse -->
+
+    <fieldset>
+      <legend>1. Quelle ligne doit être tout en haut d'une page HTML ?</legend>
+      <label><input type="radio" name="q1" value="0"> &lt;html&gt;</label>
+      <label><input type="radio" name="q1" value="1"> &lt;!DOCTYPE html&gt;</label>
+      <label><input type="radio" name="q1" value="0"> &lt;head&gt;</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Où se place la balise &lt;title&gt; ?</legend>
+      <label><input type="radio" name="q2" value="1"> Dans &lt;head&gt;</label>
+      <label><input type="radio" name="q2" value="0"> Dans &lt;body&gt;</label>
+      <label><input type="radio" name="q2" value="0"> Dans &lt;footer&gt;</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Combien de &lt;h1&gt; conseille-t-on par page ?</legend>
+      <label><input type="radio" name="q3" value="1"> Un seul</label>
+      <label><input type="radio" name="q3" value="0"> Un par section</label>
+      <label><input type="radio" name="q3" value="0"> Autant qu'on veut</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Quelle balise sert à regrouper un thème avec son titre ?</legend>
+      <label><input type="radio" name="q4" value="0"> &lt;div&gt;</label>
+      <label><input type="radio" name="q4" value="0"> &lt;span&gt;</label>
+      <label><input type="radio" name="q4" value="1"> &lt;section&gt;</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. Quel attribut indique la langue de la page ?</legend>
+      <label><input type="radio" name="q5" value="0"> charset</label>
+      <label><input type="radio" name="q5" value="1"> lang</label>
+      <label><input type="radio" name="q5" value="0"> title</label>
+    </fieldset>
+
+    <button onclick="afficherScore()">Voir mon score</button>
+    <p id="resultat"></p>
+  </main>
+
+  <script src="score.js"></script>
+</body>
+</html>
